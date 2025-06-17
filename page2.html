@@ -1,0 +1,265 @@
+
+</html><!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.myPage {
+    margin-top:50px; padding-left:200px;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  border-style: solid;
+  border-color:#9c958a;
+}
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a.active {
+  background-color: #af9d83;
+  color: white;
+  }
+  
+  
+.container {
+  display: flex;
+  align-items: center;
+  border-bottom: solid;
+  border-width:1px;
+  padding: 9px;
+  }
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: auto;
+}
+.text {
+  margin-right: auto;
+}
+
+
+.select {
+  appearance: none;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  margin-left:5px;
+}
+select:focus {
+  outline: none;
+  border-color:#9c958a;
+  box-shadow: #9c958a;
+}
+
+select::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+select:hover {background-color: #ddd;}
+option:hover {background-color: red;}
+
+input
+{padding:7px; margin-left:5px; 
+  border:3px solid #ccc;
+  border-radius: 4px;"
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;}
+input:focus {
+  border: 3px solid #9c958a;
+}
+
+button{
+background-color:#9c958a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+  background-color:#af9d83;
+}
+
+
+  
+</style>
+
+<script>
+        function copyAddress() {
+            if (document.getElementById("sameAsAbove").checked) 
+			{
+                document.getElementById("floor2").value = document.getElementById("floor1").value;
+                document.getElementById("road2").value = document.getElementById("road1").value;
+                document.getElementById("landmark2").value = document.getElementById("landmark1").value;
+                document.getElementById("subcity2").value = document.getElementById("city1").value;
+				document.getElementById("city2").value = document.getElementById("city1").value;
+                document.getElementById("state2").value = document.getElementById("state1").value;
+                document.getElementById("pincode2").value = document.getElementById("pincode1").value;   
+
+            } 
+			else 
+			{
+                document.getElementById("floor2").value = "";
+                document.getElementById("road2").value = "";
+                document.getElementById("landmark2").value = "";
+                document.getElementById("subcity2").value = "";
+				document.getElementById("city2").value = "";
+                document.getElementById("state2").value = "";
+                document.getElementById("pincode2").value = "";
+            }
+        }
+    
+	
+	
+	
+	
+	
+	</script>
+	
+</head>
+  
+  
+<body>
+
+
+<div class="topnav">
+  <a class="active" style="background-color:#F4BB44" href="#home">Village Era</a>
+</div>
+
+
+
+<div class="container">
+  <div class="circle" style="background-color: #F4BB44"></div>
+  <span class="text">Buisness name</span>
+  <div class="circle" style="background-color: #F4BB44"></div>
+  <span class="text">Buisness Info</span>
+  <div class="circle" style="background-color: #F4BB44"></div>
+  <span class="text">Tax Info</span>
+  <div class="circle" style="background-color: #F4BB44"></div>
+  <span class="text">Confirm</span>
+</div>
+
+<form id="myForm">
+
+<div class="myPage" style=" margin-top:50px;">
+<h1 style="font-size:28px;">Give us informations about your Buisness</h1>
+<h5 style="margin:0px; padding:2px;">Username you'd like to use on Village Era</h5>
+<form style="margin-top:0px;">
+<input style="padding:7px; margin-left:5px;" placeholder="Username" required></input>
+<h5 style="margin-bottom:0px; padding:2px;">Select Catagory</h5>
+<select class="select" >
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>   
+  </select>
+</form>
+</div>
+
+
+
+<div class="myPage"><h3 style="color:gray; border-top: solid; border-width:1px; padding-top:5px;">Buisness Address</h3>
+    <form id="myForm">
+        <label for="floor">Floor,Building/Apartment No.</label>
+		<br>
+        <input type="text" id="floor1" name="floor" style="width:600px;" required ><br><br>
+
+        <label for="road">Road Name/Number</label>
+		<br>
+        <input type="text" id="road1" name="road" style="width:600px;" required><br><br>
+
+        <label for="landmark">Landmark:</label>
+		<br>
+        <input type="text" id="landmark1" name="landmark" style="width:600px;" required><br><br>
+
+        <label for="city">Village</label>
+		<br>
+        <input type="text" id="subcity1" name="subcity" style="width:600px;" ><br><br>
+		
+		<label for="city">City</label>
+		<br>
+        <input type="text" id="city1" name="city" style="width:600px;" required><br><br>
+
+        <label for="state">State</label>
+		<br>
+        <input type="text" id="state1" name="state" style="width:600px;"  required><br><br>
+
+        <label for="pincode">Pincode</label>
+		<br>
+        <input type="text" id="pincode1" name="pincode" style="width:600px;"  required><br><br>   
+    </form></div>
+
+
+<div class="myPage"><h3 style="color:gray; border-top: solid; border-width:1px; padding-top:5px;">Shipping Address</h3>
+    <input type="checkbox" id="sameAsAbove" name="sameAsAbove" onclick="copyAddress()"> Same as above address<br><br>
+    <form id="myForm">
+        <label for="floor">Floor,Building/Apartment No.</label>
+		<br>
+        <input type="text" id="floor2" name="floor" style="width:600px;"  required><br><br>
+
+        <label for="road">Road Name/Number</label>
+		<br>
+        <input type="text" id="road2" name="road" style="width:600px;"  required><br><br>
+
+        <label for="landmark">Landmark:</label>
+		<br>
+        <input type="text" id="landmark2" name="landmark" style="width:600px;"  required><br><br>
+
+        <label for="city">Village</label>
+		<br>
+        <input type="text" id="subcity2" name="subcity" style="width:600px;" ><br><br>
+		
+		<label for="city">City</label>
+		<br>
+        <input type="text" id="city2" name="city" style="width:600px;"  required><br><br>
+
+        <label for="state">State</label>
+		<br>
+        <input type="text" id="state2" name="state"  style="width:600px;" required><br><br>
+
+        <label for="pincode">Pincode</label>
+		<br>
+        <input type="text" id="pincode2" name="pincode" style="width:600px;"  required><br><br>  		
+    </form></div>
+	
+	<div class="myPage" >
+	<a href="page3.html"><button type="submit" id="submitButton" style="margin-top:5px; background-color: F4BB44; color:black" >Submit</button>
+    </div></a>	
+
+</form>
+
+
+
+</body>
+<script>
+	const form = document.getElementById('myForm');
+    const submitButton = document.getElementById('submitButton');   
+    const inputs = form.querySelectorAll('input');   
+    form.addEventListener('input', () => {
+      const allFilled = [...inputs].every(input => input.value.trim() !== '');
+      submitButton.disabled = !allFilled;
+    });
+	
+	</script>
+</html>

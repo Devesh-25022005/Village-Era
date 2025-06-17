@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mypage {
+    margin-top:50px; padding-left:200px;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  border-style: solid;
+  border-color:#9c958a;
+}
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a.active {
+  background-color: #af9d83;
+  color: white;
+  }
+  
+  
+.container {
+  display: flex;
+  align-items: center;
+  border-bottom: solid;
+  border-width:1px;
+  padding: 9px;
+  }
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: auto;
+}
+.text {
+  margin-right: auto;
+}
+
+
+
+.select {
+  appearance: none;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  margin-left:5px;
+  margin-bottom:10px;
+}
+select:focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+select::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+select:hover {background-color: #ddd;}
+option:hover {background-color: red;}
+
+
+input
+{padding:7px; margin-left:5px; 
+  border:3px solid #ccc;
+  border-radius: 4px;"
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;}
+input:focus {
+  border: 3px solid #9c958a;
+}
+
+button{
+background-color:#9c958a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+  background-color:#af9d83;
+}
+
+
+.container2 {
+  border: 1px solid #ccc;
+  display: block;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: relative;
+  padding-left:50px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 20px;
+  transtion:0.5;
+  width:600px;
+}
+
+/* Hide the browser's default radio button */
+.container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top:53px;
+  left: 10px;
+  height: 17px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 17px;
+  background-color: #af9d83;
+  border-radius: 50%;
+}
+
+
+.container2:hover input ~ .checkmark {
+  background-color: #9c958a;
+}
+
+/* When the radio button is checked, add a blue background */
+.container2 input:checked ~ .checkmark {
+  background-color: #9c958a;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container2 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container2 .checkmark:after {
+ 	top: 6px;
+	left: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: yellow;
+}
+
+.container2:hover {
+  background-color: #F4BB44;
+  color: black;
+} 
+
+
+</style>
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+
+  <div class="topnav">
+  <a class="active" style="background-color: #F4BB44;" href="#home">Village Era</a>
+</div>
+
+
+
+<div class="container">
+  <div class="circle" style="background-color: #F4BB44;"></div>
+  <span class="text">Buisness name</span>
+  <div class="circle" style="background-color: #F4BB44;"></div>
+  <span class="text">Buisness Info</span>
+  <div class="circle" style="background-color: #F4BB44;"></div>
+  <span class="text">Tax Info</span>
+  <div class="circle" style="background-color: #F4BB44;"></div>
+  <span class="text">Confirm</span>
+</div>
+
+
+
+<div class="mypage">
+<h2 style="color:black;  padding-top:5px;">Tax Information</h2>
+    
+  <label style="margin-bottom:0px; padding:2px;">Select State</label>
+  <br>
+  <select class="select" >
+  <option>Select State</option>
+    <option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="West Bengal">West Bengal</option>
+  </select>
+  
+	
+	<form>
+        <label for="name">Seller's Legal Name</label>
+		<br>
+        <input type="text" id="Name" name="Name" required><br><br>
+
+        <label for="gst">GST Number</label>
+		<br>
+        <input type="integer" id="gstin" name="gstin" required><br><br>
+
+        <label for="pannumber">Pan Number</label>
+		<br>
+        <input type="text" id="panno" name="panno" required><br><br>
+    </form>
+	
+	<a href="page4.html"><button type="submit" id="submitButton" style="background-color: #F4BB44;color:black" >Next</button>	</a>
+</div>
+
+
+
+<div class="mypage">
+<br>
+<br>
+<h2>Select how you'd like to deliver your products</h2>
+
+<label class="container2" >
+  <h4>Want us to deliver?</h4>
+  <p>Your Product will be packed by us and will be picked from your shipping location and will be delivered. Of course there's a fee per shipment</p>
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container2"><h4>Deliver yourself?</h4>
+<p>YOU will store your product, YOU need to pick the third party dilevery partner, YOU do the deliver by YOURSELF!</p>
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+
+</div>
+
+   <div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+  </script>
+</body>
+
+
+
+
+</html>

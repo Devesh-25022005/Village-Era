@@ -1,0 +1,141 @@
+
+</html><!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:white;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  border-style: solid;
+  border-color:#9c958a;
+}
+
+
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a.active {
+  background-color: #F4BB44;
+  color: white;
+  }
+  
+  
+  .container {
+  display: flex;
+  align-items: center;
+  border-bottom: solid;
+  border-width:1px;
+  padding: 9px;
+  }
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: auto;
+}
+.text {
+  margin-right: auto;
+}
+
+
+input:focus {
+  border: 3px solid #9c958a;
+}
+
+button{
+  width: 40%;
+  height: 35px;
+}
+ 
+ button:hover {
+  opacity: 0.8;
+}
+  
+  
+</style>
+</head>
+
+
+
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Village Era</a>
+</div>
+
+<div class="container">
+  <div class="circle" style="background-color: #F4BB44"></div>
+  <span class="text">Buisness name</span>
+  <div class="circle" style="background-color: #F4BB44"></div>
+  <span class="text">Buisness Info</span>
+  <div class="circle" style="background-color: #F4BB44"></div>
+  <span class="text">Tax Info</span>
+  <div class="circle" style="background-color: #F4BB44"></div>
+  <span class="text">Confirm</span>
+</div>
+
+
+<div style=" margin-top:50px; padding-left:200px;" >
+  <h2>Resiter yourself as a seller with us</h2>
+  <p style="font-family:Arial;">What you need...</p>
+  <ul style="font-family:Arial;" >
+  <li>Bank details to receive payments</li>
+  <li>GSTIN Number</li>
+  </ul> 
+  <p>Enter your details below</p>
+  
+  <form style="border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	margin-top:20px;" action="page2.html">
+
+        <label for="cname" style="margin-bottom: 15px;
+	padding:1px;">Company/buisness name</label><font style="color:red;">*</font>  
+	
+		<input type="text" id="cname" name="cname" required style="width: 80%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+	border-radius: 4px;
+	transtion:0.5;">
+
+        <button type="next" id="button" style="background-color:#F4BB44;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;">Submit</button>
+	
+	<p style="font-size:11px;">Enter the detail as per in GST/PAN</p>
+	</form>
+   
+   <div>
+   <br>
+   <br>
+   </div>
+  
+   
+</div>
+
+</body>
+</html>
+
+
