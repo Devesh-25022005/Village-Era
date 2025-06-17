@@ -1,0 +1,194 @@
+
+
+
+
+.top-menu-link{
+	color: black;
+	font-weight: 600;
+	font-size:20px;
+	margin: 5px;
+
+
+}
+
+.top-menu-link:hover{
+	color: #F4BB44;
+	text-decoration: none;
+}
+
+button.contact-btn{
+	width:160px;
+    color: black;
+	height:50px;
+	border:none;
+	font-size:20px;
+	
+	text-transform:capitalize;
+	background-color:#F4BB44 ;
+	margin-left: 100px;
+}
+
+button.contact-btn:hover{
+	color: white;
+background-color:black;
+font-weight: bold;
+
+}
+
+.slider-height{
+
+	display: flex;
+	justify-content: space-around;
+	background-size:cover ;
+	height: 80vh;
+	padding: 10px;
+}
+
+/*.caption{
+ font-family: sans-serif;
+ font-weight: bolder;
+color: black;
+display: inline-block;
+padding: 10px 20px;
+border-radius: 20%;
+}*/
+
+
+
+
+.heading{
+	text-align:center; margin-top: 10px; color: #B4C424; font-weight: bolder;
+}
+
+
+.button1{
+	background-color:#F4BB44 ;
+
+	
+
+}
+button.button1:hover{
+	color: white;
+background-color:black;
+font-weight: bold;
+
+
+}
+
+.dropdown-menu {
+  background-color: #333; /* dark grey background */
+}
+
+.dropdown-item {
+  color: #F4BB44; /* white text color */
+  padding: 10px; /* add padding */
+}
+
+.dropdown-item:hover {
+  background-color: #555; /* dark grey hover background */
+  color: #ccc; /* light grey hover text */
+}
+
+
+.footer{
+	background-color: #FFC72C;
+	height:400px;
+}
+
+
+.heading{
+	color: #F4BB44 ;
+}
+
+.info{
+		text-decoration:none;
+		color:black;
+}
+
+
+.info:hover{
+	text-decoration: underline;
+	color:black;
+}
+
+.address{
+	font-weight: bold;
+}
+
+/*Women empowerment*/
+.row1{
+	width: 80%;
+	max-width: 1170px;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 50px;
+/*	overflow-x:hidden;*/
+/*	padding: 5rem 0;*/
+
+}
+
+.row1 .imgWrapper img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	margin-left: 15px;
+
+}
+
+
+
+/*.row .imgWrapper:hover img{
+	transform: scale(1.1);
+	margin-left: 25px;
+}
+*/
+.row1 .contentWrapper{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 30px;
+}
+
+.row1 .contentWrapper span.textWrapper{
+	display: block;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.row1 .contentWrapper h2{
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.row1 .contentWrapper p{
+	padding-bottom: 25px;
+	line-height: 25px;
+	font-size:18px;
+
+}
+
+
+
+.row1 .contentWrapper a{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #F4BB44;
+	color:black;
+	font-weight: 700;
+	padding: 15px 40px;
+	letter-spacing: 1px;
+
+}
+
+
+.row1 .contentWrapper:hover a{
+	transform: scale(1);
+}
+
+
+
+.placeholder-style{
+	border-color:#F4BB44;
+}
